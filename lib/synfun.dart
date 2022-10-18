@@ -41,16 +41,16 @@ class _MyHomePageState extends State<MyHomePage> {
     return Container(
       child: HorizontalDataTable(
         leftHandSideColumnWidth: 100,
-        rightHandSideColumnWidth: 600,
+        rightHandSideColumnWidth: 700,
         isFixedHeader: true,
         headerWidgets: _getTitleWidget(),
         leftSideItemBuilder: _generateFirstColumnRow,
         rightSideItemBuilder: _generateRightHandSideColumnRow,
         itemCount: 14,
         rowSeparatorWidget: const Divider(
-          color: Colors.yellow,
-          height: 2.0,
-          thickness: 3.0,
+          color: Colors.black,
+          height: 1.0,
+          thickness: 2.0,
         ),
       ),
       height: MediaQuery.of(context).size.height,
@@ -118,6 +118,10 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
           alignment: Alignment.centerLeft,
         ),
+        // VerticalDivider(
+        //   width: 4,
+        //   color: Colors.black,
+        // ),
         Container(
           color: Colors.orange,
           child: Text('N/A'),
